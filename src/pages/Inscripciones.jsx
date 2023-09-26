@@ -186,10 +186,16 @@ const Inscripciones = () => {
         setAlert(
           <Alert severity="success">
             <AlertTitle>Correcto</AlertTitle>
-            Se ha agregado la gestión correctamente. —{' '}
+            Se ha agregado la lista de inscripción correctamente. —{' '}
             <strong>Exitos!</strong>
           </Alert>
         );
+
+        // refresca página despues de delay
+        setTimeout(() => {
+          window.location.reload();
+        }, 2000); // 2000 milliseconds = 2 seconds
+
       } else {
         setAlert(
           <Alert severity="error">
@@ -197,6 +203,12 @@ const Inscripciones = () => {
             No se ha podido agregar.
           </Alert>
         );
+
+        // refresca página despues de delay
+        setTimeout(() => {
+          window.location.reload();
+        }, 2000); // 2000 milliseconds = 2 seconds
+
         console.log('error')
       }
     });

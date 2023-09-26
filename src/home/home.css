@@ -355,6 +355,16 @@ label {
     color:#00303F;
 }
 
+.Sidebar__list #active #title{
+  background: #CAE4DB;
+    color:#00303F;
+}
+
+.Sidebar__list .title{
+  background: #7A9D96;
+    color:#00303F;
+}
+
 .Sidebar__Menu {
   margin-left: 250px;
   color:#00303F;
@@ -363,13 +373,17 @@ label {
 
 .Sidebar__list .title #title {
   font-weight: bold;
-  color:white;
+  color:#00303F;
   font-style: oblique;
   font-size: large;
 }
 
 .row #title {
   flex: 70%;
+  &:hover{
+    background: #CAE4DB;
+    color:#00303F;
+  }
 }
 
 .row{
